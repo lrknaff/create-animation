@@ -30,3 +30,7 @@ svg {
   top: 25%;
   width: 70%;
 }
+
+#closed-eye-bottom, #closed-eye-top {
+  visibility: hidden;
+}
