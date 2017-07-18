@@ -1,0 +1,32 @@
+body {
+  background: url('http://res.cloudinary.com/odin-designs/image/upload/v1500067378/background_image_nmqykr.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  background-size: cover;
+  opacity: .9;
+}
+
+.animation {
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  z-index: 900;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+svg {
+  position: absolute;
+  left: 15%;
+  top: 25%;
+  width: 70%;
+}
