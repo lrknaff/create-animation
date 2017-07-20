@@ -26,9 +26,8 @@ body {
 
 svg {
   position: absolute;
-  left: 15%;
   top: 25%;
-  width: 70%;
+  width: 100%;
 }
 
 #closed-eye-bottom, #closed-eye-top {
