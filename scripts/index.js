@@ -4,7 +4,11 @@ let openEyeTop = "M625.76,64.52c-1.24,1.3-2,4.64-2.94,6l2.12-.38c2.7-10.06,9.88-
 
 let tl = new TimelineMax({delay:1.5})
 
-tl.to("#open-eye-bottom", .2, {morphSVG:{shape:"#closed-eye-bottom"}, shapeIndex:22, ease:Power4.easeInOut}, 0)
-  .to("#open-eye-top", .2, {morphSVG:{shape:"#closed-eye-top"}, shapeIndex:23, ease:Power4.easeInOut}, 0)
-  .to("#open-eye-top", .2, {morphSVG:{shape:openEyeTop}, shapeIndex:2, ease:Power4.easeInOut}, 0.2)
-  .to("#open-eye-bottom", .2, {morphSVG:{shape:openEyeBottom}, shapeIndex:2, ease:Power4.easeInOut}, 0.2)
+tl.to("#open-eye-bottom", .05, {morphSVG:{shape:"#closed-eye-bottom"}, shapeIndex:22, ease:Power3.easeIn}, 0)
+  .to("#open-eye-top", .05, {morphSVG:{shape:"#closed-eye-top"}, shapeIndex:23, ease:Power3.easeIn}, 0)
+  .to("#open-eye-white", .05, {opacity: 0}, 0)
+  .to("#open-eye-center", .05, {opacity: 0}, 0)
+  .to("#open-eye-top", .05, {morphSVG:{shape:openEyeTop}, shapeIndex:2, ease:Power3.easeIn}, 0.1)
+  .to("#open-eye-bottom", .05, {morphSVG:{shape:openEyeBottom}, shapeIndex:2, ease:Power3.easeIn}, 0.1)
+  .to("#open-eye-white", 0, {opacity: 1}, 0.1)
+  .to("#open-eye-center", 0, {opacity: 1}, 0.1)
