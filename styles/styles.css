@@ -12,7 +12,7 @@ body {
   bottom: 0;
   background-color: black;
   background-size: cover;
-  opacity: .9;
+  opacity: .9;op
 }
 
 .animation {
@@ -30,6 +30,31 @@ svg {
   width: 100%;
 }
 
-#closed-eye-bottom, #closed-eye-top {
+#closed-eye-bottom, #closed-eye-top, #closed-eye-top-slow, #closed-eye-bottom-slow {
   visibility: hidden;
+}
+
+button {
+  background: none;
+  border-style: none;
+  color: white;
+  z-index: 999;
+  position: relative;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.on {
+  color: aqua;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.button-container {
+  position: relative;
+  margin: 20px auto;
+  width: 300px;
 }
