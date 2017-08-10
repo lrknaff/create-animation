@@ -7,24 +7,24 @@ let tl = new TimelineMax({delay:1.5, repeat: -1, repeatDelay: 4});
 let t2 = new TimelineMax({delay:1.5, repeat: -1, repeatDelay: 4});
 
 //faster
-tl.to("#open-eye-bottom", .05, {morphSVG:{shape:"#closed-eye-bottom"}, shapeIndex:22, ease:Power3.easeIn}, 0)
-  .to("#open-eye-top", .05, {morphSVG:{shape:"#closed-eye-top"}, shapeIndex:23, ease:Power3.easeIn}, 0)
-  .to("#open-eye-white", .05, {opacity: 0}, 0)
-  .to("#open-eye-center", .05, {opacity: 0}, 0)
+tl.to("#open-eye-bottom", .02, {morphSVG:{shape:"#closed-eye-bottom"}, shapeIndex:22, ease:Power3.easeIn}, 0)
+  .to("#open-eye-top", .02, {morphSVG:{shape:"#closed-eye-top"}, shapeIndex:23, ease:Power3.easeIn}, 0)
+  .to("#open-eye-white", .02, {opacity: 0}, 0)
+  .to("#open-eye-center", .02, {opacity: 0}, 0)
   .to("#open-eye-top", .05, {morphSVG:{shape:openEyeTop}, shapeIndex:2, ease:Power3.easeOut}, 0.2)
   .to("#open-eye-bottom", .05, {morphSVG:{shape:openEyeBottom}, shapeIndex:2, ease:Power3.easeOut}, 0.2)
-  .to("#open-eye-white", 0, {opacity: 1}, 0.2)
-  .to("#open-eye-center", 0, {opacity: 1}, 0.2);
+  .to("#open-eye-white", .05, {opacity: 1}, 0.2)
+  .to("#open-eye-center", .05, {opacity: 1}, 0.2);
 
 //slower
-  t2.to("#open-eye-bottom-slow", .05, {morphSVG:{shape:"#closed-eye-bottom-slow"}, shapeIndex:22, ease:Power3.easeIn}, 0)
-    .to("#open-eye-top-slow", .05, {morphSVG:{shape:"#closed-eye-top-slow"}, shapeIndex:23, ease:Power3.easeIn}, 0)
-    .to("#open-eye-white-slow", .05, {opacity: 0}, 0)
-    .to("#open-eye-center-slow", .05, {opacity: 0}, 0)
-    .to("#open-eye-top-slow", .15, {morphSVG:{shape:openEyeTop}, shapeIndex:2, ease:Power3.easeOut}, 0.2)
-    .to("#open-eye-bottom-slow", .15, {morphSVG:{shape:openEyeBottom}, shapeIndex:2, ease:Power3.easeOut}, 0.2)
-    .to("#open-eye-white-slow", .15, {opacity: 1}, 0.2)
-    .to("#open-eye-center-slow", .15, {opacity: 1}, 0.2);
+  t2.to("#open-eye-bottom-slow", .08, {morphSVG:{shape:"#closed-eye-bottom-slow"}, shapeIndex:22, ease:Power3.easeIn}, 0)
+    .to("#open-eye-top-slow", .08, {morphSVG:{shape:"#closed-eye-top-slow"}, shapeIndex:23, ease:Power3.easeIn}, 0)
+    .to("#open-eye-white-slow", .08, {opacity: 0}, 0)
+    .to("#open-eye-center-slow", .08, {opacity: 0}, 0)
+    .to("#open-eye-top-slow", .16, {morphSVG:{shape:openEyeTop}, shapeIndex:2, ease:Power3.easeOut}, 0.2)
+    .to("#open-eye-bottom-slow", .16, {morphSVG:{shape:openEyeBottom}, shapeIndex:2, ease:Power3.easeOut}, 0.2)
+    .to("#open-eye-white-slow", .16, {opacity: 1}, 0.2)
+    .to("#open-eye-center-slow", .16, {opacity: 1}, 0.2);
 
 $(document).ready(function() {
   $('.button-fast').click(function(e) {
